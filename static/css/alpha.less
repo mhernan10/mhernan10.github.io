@@ -1,0 +1,67 @@
+@import 'elements.less';
+@import 'mixins.less';
+@import url('https://fonts.googleapis.com/css?family=Oswald|Righteous');
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: @void;
+  font-family: 'Oswald';
+  background-image: url('img/real_cf.png');
+} 
+
+header {
+  padding: 5px 30px;
+  background-color: @temp_color2;
+  color: #000000;
+  
+  h1 {
+    font-size: 10rem;
+    font-family: 'Righteous';
+    display: inline-block;
+    padding: 0;
+    margin-left: 40px;
+  }
+}
+
+
+#nav1 {
+  background-color: @temp_color1;
+  padding: 0;
+  margin-top: 5px;
+  .border-radius;
+  
+  ul {
+    padding: 10px;
+    padding-left: 60px;
+    border: solid 2px darken(@temp_color1, 10%);
+    .border-radius;
+    
+    li {
+      
+      display: inline-block;
+      border-left: @border-solid;
+      padding: 0 10px;
+      margin: 0;
+      font-size: 1.8rem;
+
+      &:first-child {
+        border-left: none;
+      }
+
+    }
+  }
+
+}
+
+.container {
+  width: 90%;
+  margin: 0 center;
+}
